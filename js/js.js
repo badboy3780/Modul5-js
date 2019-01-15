@@ -134,7 +134,7 @@ console.log(getInactiveUsers(users)); // [объект Moore Hensley, объек
 /**
  * Получить пользоваля (не массив) по email (поле email, он уникальный)
  */
-const getUserByEmail = (arr, email) => arr.filter(userEmail => userEmail.email == email);
+const getUserByEmail = (arr, email) => arr.find(user => user.email === email);
 
 console.log(getUserByEmail(users, 'shereeanthony@kog.com')); // {объект пользователя Sheree Anthony}
 console.log(getUserByEmail(users, 'elmahead@omatom.com')); // {объект пользователя Elma Head}
